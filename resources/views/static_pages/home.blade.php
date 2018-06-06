@@ -18,7 +18,7 @@
               <p>高效沟通十分重要！与企业团队的领导力、执行力、凝聚力等都密切相关，</p>
               <p>邓宏伟老师的《高效沟通》内训课程能够及时有效地解除您的烦恼……</p>
               <p><a class="btn btn-lg btn-dark" href="/course/com" role="button">查看详情</a>
-                  <a class="btn btn-lg btn-primary" href="/signup?course=com" role="button">报名学习</a>
+                  <a class="btn btn-lg btn-primary" href="/notify?course=com" role="button">报名学习</a>
               </p>
             </div>
           </div>
