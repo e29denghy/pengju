@@ -150,6 +150,10 @@ body {
 	letter-spacing:3px;
 }
 
+.font_22{
+	font-size: 22px;
+}
+
 .font_28{
 	font-size: 28px;
 }
@@ -276,6 +280,11 @@ body {
 
 .ml_200{
 	margin-left: 200px;
+}
+
+.featurette-divider{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 /* Responsive: Portrait tablets and up */

@@ -18,7 +18,7 @@
               <p>高效沟通十分重要！与企业团队的领导力、执行力、凝聚力等都密切相关，</p>
               <p>邓宏伟老师的《高效沟通》内训课程能够及时有效地解除您的烦恼……</p>
               <p><a class="btn btn-lg btn-dark" href="/course/com" role="button">查看详情</a>
-                <a class="btn btn-lg btn-primary" href="#" role="button">报名学习</a>
+                  <a class="btn btn-lg btn-primary" href="/signup?course=com" role="button">报名学习</a>
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@
               <p>员工心态决定了团队状态，在很大程度上影响了企业团队的领导力、执行力、凝聚力和公司业绩，</p>
               <p>邓宏伟老师《阳光心态》内训课程能够及时有效地解除您的烦恼……</p>
               <p><a class="btn btn-lg btn-dark" href="/course/sun" role="button">查看详情</a>
-                <a class="btn btn-lg btn-primary" href="#" role="button">报名学习</a></p>
+                <a class="btn btn-lg btn-primary" href="/signup?course=sun" role="button">报名学习</a>
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@
           &nbsp;&nbsp;&nbsp;&nbsp;☆ 现场掌握高效会议发言的公式；<br>
           &nbsp;&nbsp;&nbsp;&nbsp;☆ 现场学会应用赞美的多种方法。
         </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-primary" href="#" role="button">报名学习</a></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-primary" href="/signup?course=com" role="button">报名学习</a></p>
       </div>
       <div class="col-md-5">
         <img class="featurette-image img-fluid mx-auto" src="/image/com_big.png" alt="Generic placeholder image">
@@ -120,7 +120,7 @@
           ☆ 培养员工的感恩心态，感恩公司和客户，做一个充满爱心的人；<br>
           ☆ 树立正面的思维观念，增强员工正能量。<br>
           ☆ 助力企业打造一支自动自发的卓越团队。</p>
-        <p><a class="btn btn-lg btn-primary" href="#" role="button">报名学习</a></p>
+        <p><a class="btn btn-lg btn-primary" href="/signup?course=sun" role="button">报名学习</a></p>
       </div>
       <div class="col-md-5 order-md-1">
         <img class="featurette-image img-fluid mx-auto" src="/image/sun_big.png" alt="Generic placeholder image">

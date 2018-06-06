@@ -38,7 +38,7 @@
         @foreach($data['quote']['answer'] as $answer)
         <p><h3 class="let_3">{{ $answer }}</h3></p>
         @endforeach
-        <p><a class="btn btn-lg btn-primary" href="#" role="button">报名学习</a></p>
+        <p><a class="btn btn-lg btn-primary" href="/signup?course=com" role="button">报名学习</a></p>
       </div>
     </div>
     <div class="col-xs-4 col-md-4 pdr_0">

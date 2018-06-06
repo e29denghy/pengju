@@ -62,7 +62,7 @@ return [
             'app_id' => env('WECHAT_OFFICIAL_ACCOUNT_APPID', 'wx819d3387e41e255d'),         // AppID
             'secret' => env('WECHAT_OFFICIAL_ACCOUNT_SECRET', '1db7096ac25e37ae4c4f5877c2f32c9b'),    // AppSecret
             'token' => env('WECHAT_OFFICIAL_ACCOUNT_TOKEN', 'pengjuculture'),           // Token
-            'aes_key' => env('WECHAT_OFFICIAL_ACCOUNT_AES_KEY', 'BPvblia71kTL4Hgrq61tjZedQoSFBNfLO7XQzoKueAZ'),                 // EncodingAESKey
+            'aes_key' => env('WECHAT_OFFICIAL_ACCOUNT_AES_KEY', 'o2ayolqp3wKd0h6nrnQtIC4K3FzShvlI7Xaa4FPQYfg'),                 // EncodingAESKey
 
             /*
              * OAuth 配置
