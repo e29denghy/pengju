@@ -2,13 +2,13 @@
 	<nav class="nav bg-dark p-3 justify-content-center" id="navbarCollapse">
 			<ul class="nav nav-pills">
 			  <li class="nav-item">
-			    <a class="nav-link" href="/notify?course=com#teacher" id="foot_home">老师简介</a>
+			    <a class="nav-link" href="/notify?course=com&to=teacher#teacher" id="foot_teacher">邓老师介绍</a>
 			  </li>
 				<li class="nav-item">
-			    <a class="nav-link" href="/notify?course=com#entry" id="foot_home">预约报名</a>
+			    <a class="nav-link" href="/notify?course=com&to=entry#entry" id="foot_entry">预约报名</a>
 			  </li>
 				<li class="nav-item">
-					<a class="nav-link" href="/notify?course=com#go"  id="foot_member">交通路线</a>
+					<a class="nav-link" href="/notify?course=com&to=go#go"  id="foot_go">交通路线</a>
 				</li>
 			</ul>
 	</nav>
