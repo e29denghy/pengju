@@ -67,6 +67,10 @@
           <h5 class="text-white let_2"><span data-feather="thumbs-up"></span>{{ $data['pay_1'] }}</h5>
           <h5 class="text-white let_2"><span data-feather="thumbs-up"></span>{{ $data['pay_2'] }}</h5>
         </p>
+        <p>
+          <h5 class="text-white let_2">机会难得，名额有限！</h5>
+          <h5 class="text-white let_2">欢迎您报名参加，谢绝空降！</h5>
+        </p>        
       <h2 class="let_3 text-center mt-3 mb-3 text-white">现场福利</h2>
         <p>
           <h5 class="text-white let_2"><span data-feather="dollar-sign"></span>{{ $data['bonus_1'] }}</h5>
