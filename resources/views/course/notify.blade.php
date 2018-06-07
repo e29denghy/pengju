@@ -37,16 +37,20 @@
   <div class="pdr_0 mt-3 mb-3">
     <img class="img-fluid p-0" src="/image/tx.jpg" alt="邓宏伟老师与天禧国际学员集体合影">
   </div>
-  <div class="row featurette bg-danger">
-    <div class="p-3 justify-content-center">
-      <h2 class="let_3 text-center mt-3 mb-3 text-white">{{ $data['gain'] }}</h2>
+  <div class="row justify-content-md-center featurette bg-danger">
+    <div class="col-md-6 p-3">
+      <h2 class="text-center text-white mt-3 mb-3">{{ $data['gain'] }}</h2>
       @foreach($data['gain_list'] as $li)
-      <p><h5 class="let_2 text-white">{{ $li }}</h5></p>
+      <p><h5 class="text-white let_2">{{ $li }}</h5></p>
       @endforeach
     </div>
   </div>
+  <div class="row justify-content-md-center">
+    <div class="col-md-6">
   <div class="pdr_0 mt-3 mb-3">
     <img class="featurette-image img-fluid" src="/image/gain.jpg" alt="邓宏伟老师与神州通学员集体合影">
+  </div>
+  </div>
   </div>
   <div class="row featurette bg-danger p-3 mb-3" id="go">
     <div class="justify-content-center">
@@ -60,8 +64,8 @@
   <div class="pdr_0 mt-3 mb-3">
     <img class="featurette-image img-fluid" src="/image/tx2.jpg" alt="邓宏伟老师与天禧国际获奖学员合影">
   </div>
-  <div class="row featurette bg-danger p-3 mb-3" id="go">
-    <div class="justify-content-center">
+  <div class="row justify-content-md-center featurette bg-danger p-3 mb-3" id="go">
+    <div class="col-md-6">
       <h2 class="let_3 text-center mt-3 mb-3 text-white">收费标准</h2>
         <p>
           <h5 class="text-white let_2"><span data-feather="thumbs-up"></span>{{ $data['pay_1'] }}</h5>
@@ -81,7 +85,7 @@
   </div>
   <hr class="featurette-divider">
 <div class="row p-5 justify-content-md-center" id="entry">
-  <div class="col-md-offset-2 col-md-3">
+  <div class="col-md-offset-2 col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading text-center">
         <h2>在 线 报 名</h2>
@@ -116,8 +120,12 @@
       <h2>邓宏伟老师介绍</h2>
       <br>
   </div>
-  <div class="pdr_0 mt-3">
-    <img class="featurette-image img-fluid" src="/image/dhw.jpg" alt="邓宏伟老师个人照片">
+  <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <div class="pdr_0 mt-3">
+        <img class="featurette-image img-fluid" src="/image/dhw.jpg" alt="邓宏伟老师个人照片">
+      </div>
+    </div>
   </div>
   <div class="row featurette p-3">
     <p class="lead">
