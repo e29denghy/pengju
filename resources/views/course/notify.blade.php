@@ -11,7 +11,7 @@
   <div class="featurette-header text-center">
       <br>
       <br>
-      <h1>{{ $title }}</h1>
+      <h2>{{ $title }}</h2>
       <br>
   </div>
   <div class="pdr_0 mt-3">
