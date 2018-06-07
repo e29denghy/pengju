@@ -37,7 +37,6 @@
   <div class="pdr_0 mt-3 mb-3">
     <img class="img-fluid p-0" src="/image/tx.jpg" alt="邓宏伟老师与天禧国际学员集体合影">
   </div>
-  <hr class="featurette-divider">
   <div class="row featurette bg-danger">
     <div class="p-3 justify-content-center">
       <h2 class="let_3 text-center mt-3 mb-3 text-white">{{ $data['gain'] }}</h2>
