@@ -14,8 +14,7 @@
       <h1>{{ $title }}</h1>
       <br>
   </div>
-  <hr class="featurette-divider">
-  <div class="pdr_0">
+  <div class="pdr_0 mt-3">
     <img class="featurette-image img-fluid" src="/image/dswl.jpg" alt="Generic placeholder image">
   </div>
   <div class="row">
@@ -27,7 +26,7 @@
   </div>
   <div class="row featurette bg-danger">
       <div class="p-3">
-        <h2 class="text-center text-white mb_40">{{ $data['value'] }}</h2>
+        <h2 class="text-center text-white mt-3 mb-3">{{ $data['value'] }}</h2>
         <p>
         @foreach($data['value_list'] as $li)
         <h5 class="text-white let_3">{{ $li }}</h5>
@@ -35,27 +34,24 @@
         </p>
       </div>
   </div>
-  <hr class="featurette-divider">
-  <div class="pdr_0">
+  <div class="pdr_0 mt-3 mb-3">
     <img class="img-fluid p-0" src="/image/tx.jpg" alt="Generic placeholder image">
   </div>
   <hr class="featurette-divider">
   <div class="row featurette bg-danger">
     <div class="p-3 justify-content-center">
-      <h2 class="let_3 text-center mb_40 text-white">{{ $data['gain'] }}</h2>
+      <h2 class="let_3 text-center mt-3 mb-3 text-white">{{ $data['gain'] }}</h2>
       @foreach($data['gain_list'] as $li)
       <p><h5 class="let_3 text-white">{{ $li }}</h5></p>
       @endforeach
     </div>
   </div>
-  <hr class="featurette-divider">
-  <div class="pdr_0">
+  <div class="pdr_0 mt-3 mb-3">
     <img class="featurette-image img-fluid" src="/image/gain.jpg" alt="Generic placeholder image">
   </div>
-  <hr class="featurette-divider">
-  <div class="row featurette bg-danger" id="go">
-    <div class="p-3 justify-content-center">
-      <h2 class="let_3 text-center mb_40 text-white">上课时间地点</h2>
+  <div class="row featurette bg-danger p-3 mb-3" id="go">
+    <div class="justify-content-center">
+      <h2 class="let_3 text-center mt-3 mb-3 text-white">上课时间地点</h2>
       <p><h5 class="let_3 text-white"><span data-feather="clock"></span>{{ $data['time'] }}</h5></p>
       <p><h5 class="let_3 text-white"><span data-feather="home"></span>{{ $data['address'] }}</h5></p>
       <p><h5 class="let_3 text-white"><span data-feather="map"></span>{{ $data['metro'] }}</h5></p>
@@ -63,7 +59,6 @@
     </div>
   </div>
   <hr class="featurette-divider">
-</div>
 <div class="row p-5 justify-content-md-center" id="entry">
   <div class="col-md-offset-2 col-md-3">
     <div class="panel panel-default">
@@ -71,7 +66,6 @@
         <h2>在 线 报 名</h2>
         <br>
       </div>
-      <hr class="featurette-divider">
       <div class="panel-body">
         @include('shared._errors')
         <form method="POST" action="/course/entry?course={{$course}}">
@@ -95,15 +89,13 @@
   </div>
 </div>
 <hr class="featurette-divider">
-<div class="container marketing" id="teacher">
-  <div class="featurette-heading text-center">
+  <div class="featurette-heading text-center" id="teacher">
       <br>
       <br>
       <h2>邓宏伟老师介绍</h2>
       <br>
   </div>
-  <hr class="featurette-divider">
-  <div class="pdr_0">
+  <div class="pdr_0 mt-3">
     <img class="featurette-image img-fluid" src="/image/dhw.jpg" alt="Generic placeholder image">
   </div>
   <div class="row featurette p-3">
