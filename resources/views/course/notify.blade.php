@@ -20,7 +20,7 @@
   <div class="row">
     <div class="p-4">
         @foreach($data['quote'] as $quote)
-        <h5 class="let_3">{{ $quote }}</h5>
+        <h5 class="let_2">{{ $quote }}</h5>
         @endforeach
     </div>
   </div>
@@ -29,7 +29,7 @@
         <h2 class="text-center text-white mt-3 mb-3">{{ $data['value'] }}</h2>
         <p>
         @foreach($data['value_list'] as $li)
-        <h5 class="text-white let_3">{{ $li }}</h5>
+        <h5 class="text-white let_2">{{ $li }}</h5>
         @endforeach
         </p>
       </div>
@@ -41,7 +41,7 @@
     <div class="p-3 justify-content-center">
       <h2 class="let_3 text-center mt-3 mb-3 text-white">{{ $data['gain'] }}</h2>
       @foreach($data['gain_list'] as $li)
-      <p><h5 class="let_3 text-white">{{ $li }}</h5></p>
+      <p><h5 class="let_2 text-white">{{ $li }}</h5></p>
       @endforeach
     </div>
   </div>
@@ -51,10 +51,10 @@
   <div class="row featurette bg-danger p-3 mb-3" id="go">
     <div class="justify-content-center">
       <h2 class="let_3 text-center mt-3 mb-3 text-white">上课时间地点</h2>
-      <p><h5 class="let_3 text-white"><span data-feather="clock"></span>{{ $data['time'] }}</h5></p>
-      <p><h5 class="let_3 text-white"><span data-feather="home"></span>{{ $data['address'] }}</h5></p>
-      <p><h5 class="let_3 text-white"><span data-feather="map"></span>{{ $data['metro'] }}</h5></p>
-      <p><h5 class="let_3 text-white"><span data-feather="map-pin"></span>{{ $data['public_bus'] }}</h5></p>
+      <p><h5 class="let_2 text-white"><span data-feather="clock"></span>{{ $data['time'] }}</h5></p>
+      <p><h5 class="let_2 text-white"><span data-feather="home"></span>{{ $data['address'] }}</h5></p>
+      <p><h5 class="let_2 text-white"><span data-feather="map"></span>{{ $data['metro'] }}</h5></p>
+      <p><h5 class="let_2 text-white"><span data-feather="map-pin"></span>{{ $data['public_bus'] }}</h5></p>
     </div>
   </div>
   <div class="pdr_0 mt-3 mb-3">
