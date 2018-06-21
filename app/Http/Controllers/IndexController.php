@@ -54,11 +54,13 @@ class IndexController extends Controller
 
     public function notify(Request $request)
     {
-        $course = new Course;
-        $data = $course->courseData('com_open');
+        $course_key = $request->course;
+        $db_course = new Course;
+        $data = $db_course->courseData($course_key.'_open');
         $course_name = config('course.name');
         $to = $request->to;
-        return view('course.notify',["title"=>"邓宏伟老师《高效沟通》实战公开课(免费)邀请函",'course'=>$request->course,"page_id"=>$to,"data"=>$data]);
+        $title = "邓宏伟老师《".$course_name[$course_key]."》实战公开课(免费)邀请函";
+        return view('course.notify',["title"=>$title,'course'=>$course_key,"page_id"=>$to,"data"=>$data]);
     }
 
     public function entry(Request $request)

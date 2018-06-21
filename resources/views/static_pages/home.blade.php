@@ -7,11 +7,12 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- <img class="first-slide" src="/static/image/dswl.png" alt="都市物流"> -->
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>《高效沟通》内训课程</h1><br>
@@ -35,8 +36,20 @@
             </div>
           </div>
         </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>《魅力口才》实战公开课</h1><br>
+              <p>口才赢得未来，沟通改变人生。找工作、找对象、开会、培训、聚会、谈生意、交朋友、演讲、发言、升职、创业……一切的一切，都离不开口才！</p>
+              <p>邓宏伟老师曾经为海能达、泰天恒集团、正一道场、正雄鞋材、建顺包材等众多企业的学员们讲授了《魅力口才》实战课程，受到了企业和学员们的一致好评。</p>
+              <p><a class="btn btn-lg btn-dark" href="/course/speech" role="button">查看详情</a>
+                <a class="btn btn-lg btn-primary" href="/notify?course=speech" role="button">报名学习</a>
+            </div>
+          </div>
+        </div>
       <div class="carousel-item">
-        <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+        <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Fourth slide">
         <div class="container">
           <div class="carousel-caption">
             <h1>邓宏伟老师</h1><br>
