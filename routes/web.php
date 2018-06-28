@@ -13,7 +13,8 @@
 Route::get('/admin', 'AdminController@dashboard')->name('admin');
 Route::get('/admin/entry', 'AdminController@entry')->name('entry_list');
 
-Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/', 'StaticPagesController@winworld')->name('win');
+Route::get('/pengju', 'StaticPagesController@home')->name('home');
 
 Route::get('/course/com', 'IndexController@com')->name('com');
 

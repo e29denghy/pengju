@@ -12,6 +12,11 @@ class StaticPagesController extends Controller
         return view('static_pages/home',["page_id"=>"home","teacher"=>config('teacher.main')]);
     }
 
+    public function winworld()
+    {
+        return view('static_pages/win',["page_id"=>"home","teacher"=>config('teacher.main')]);
+    }
+
     public function help()
     {
         return view('static_pages/help',["page_id"=>"help"]);

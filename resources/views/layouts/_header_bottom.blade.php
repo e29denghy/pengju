@@ -2,7 +2,7 @@
 	<nav class="nav bg-dark p-3 justify-content-center" id="navbarCollapse">
 			<ul class="nav nav-pills">
 			  <li class="nav-item">
-			    <a class="nav-link" href="/" id="foot_home">首 页</a>
+			    <a class="nav-link" href="/pengju" id="foot_home">首 页</a>
 			  </li>
 				<li class="nav-item dropup">
 			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"  id="foot_course">课程</a>
