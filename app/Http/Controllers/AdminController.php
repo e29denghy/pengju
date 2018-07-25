@@ -22,4 +22,13 @@ class AdminController extends Controller
       //$course_name = config('course.name');
       return view('admin/entry',compact('page_id','list'));
     }
+
+    public function entry()
+    {
+      // code...
+      $list = Entry::all();
+      $page_id = "entry";
+      //$course_name = config('course.name');
+      return view('admin/entry',compact('page_id','list'));
+    }
 }

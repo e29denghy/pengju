@@ -10,6 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/heyun/joinus', 'HeyunController@joinus')->name('joinus');
+Route::get('/heyun/joinok', 'HeyunController@joinok')->name('joinok');
+Route::post('/heyun/entry', 'HeyunController@entry')->name('heyun_entry');
+Route::get('/heyun/search', 'HeyunController@search')->name('search');
+Route::get('/admin/heyun/entry', 'AdminController@heyun')->name('heyun_list');
+
+///////////////////////////////////////////////////////////
+
 Route::get('/admin', 'AdminController@dashboard')->name('admin');
 Route::get('/admin/entry', 'AdminController@entry')->name('entry_list');
 
