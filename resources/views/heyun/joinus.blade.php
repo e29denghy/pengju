@@ -11,12 +11,12 @@
   <div class="featurette-header text-center" id='member'>
       <br>
       <br>
-      <h3>{{ $title_1 }}</h3>
+      <h2>{{ $title_1 }}</h2>
       <h3>{{ $title_2 }}</h3>
       <br>
   </div>
   <div class="pdr_0 mt-3">
-    <img class="featurette-image img-fluid" src="/heyun/9.jpg" alt="合影9">
+    <img class="featurette-image img-fluid" src="/heyun/qipao1.jpg" alt="旗袍">
   </div>
   <div class="row featurette bg-danger">
       <div class="p-3">
