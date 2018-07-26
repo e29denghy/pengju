@@ -15,7 +15,7 @@ class HeyunController extends Controller
     public function joinus()
     {
         // code...
-        return view('heyun.joinus',["title"=>config('heyun.title'),'value'=>config('heyun.value'),'value_list'=>config('heyun.value_list'),'tips'=>config('heyun.tips'),'tips_list'=>config('heyun.tips_list'),'leader'=>config('heyun.leader'),"corperation"=>config('heyun.corperation'),"page_id"=>"join"]);
+        return view('heyun.joinus',["title"=>config('heyun.title'),"title_1"=>config('heyun.title_1'),"title_2"=>config('heyun.title_2'),'value'=>config('heyun.value'),'value_list'=>config('heyun.value_list'),'tips'=>config('heyun.tips'),'tips_list'=>config('heyun.tips_list'),'leader'=>config('heyun.leader'),"corperation"=>config('heyun.corperation'),"page_id"=>"join"]);
     }
 
     public function joinok(Request $request)
@@ -42,17 +42,14 @@ class HeyunController extends Controller
         $http_refer = $_SERVER["HTTP_REFERER"];
         $redirect_url = $http_refer.'#joinus';
         $type='notify';
-
-
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
             return redirect($redirect_url)
                         ->withErrors($validator)
                         ->withInput();
         }
-
         $find_user=HeyunUser::where('mobile',$request->mobile)->first();
-        dump($find_user);
+        //dump($find_user);
         if(empty($find_user)){
           $user = HeyunUser::create([
                 'uid'=>'denghy',
@@ -70,7 +67,7 @@ class HeyunController extends Controller
                 'source' => 1,
                 'active_time'=>date("Y-m-d H:i:s"),
           ]);
-          dump($user);
+          //dump($user);
           if(empty($user)){
 
           }
@@ -87,7 +84,7 @@ class HeyunController extends Controller
                   'state'=> 1,
                   'active_time'=>date("Y-m-d H:i:s"),
               ]);
-              dump($entry);
+              //dump($entry);
                session()->flash('success', '恭喜~您已经预约成功！');
                return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$request->name.'&id_card='.$request->id_card.'&code='.$entry->entry_code);
           }
