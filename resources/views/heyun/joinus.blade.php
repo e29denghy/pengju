@@ -117,7 +117,7 @@
         <p>
           <h5 class="text-white let_2">地址：中国深圳罗湖区大望精鼎文化创意产业园B7栋3层</h5>
           <h5 class="text-white let_2">电话：0755－25607811</h5>
-          <h5 class="text-white let_2">手机：13590374828  13926592225</h5>
+          <h5 class="text-white let_2">手机：13502841101(助理小小)</h5>
         </p>
       </div>
     </div>
