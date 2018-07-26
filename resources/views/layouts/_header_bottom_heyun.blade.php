@@ -8,7 +8,13 @@
 			    <a class="nav-link" href="/heyun/joinus#joinus" id="foot_joinus">预约报名</a>
 			  </li>
 				<li class="nav-item">
-					<a class="nav-link" href="/heyun/joinus#leader"  id="foot_leader">吴亚敏介绍</a>
+			    <a class="nav-link" href="/heyun/search" id="foot_search">会员查询</a>
+			  </li>
+				<li class="nav-item">
+					<a class="nav-link" href="/heyun/joinus#leader"  id="foot_leader">设计师介绍</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/heyun/qipao"  id="foot_qipao">旗袍图赏</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/heyun/joinus#corperation"  id="foot_corperation">一訸一舍</a>

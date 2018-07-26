@@ -9,5 +9,5 @@ class HeyunCard extends Model
     //
     protected $table = 'heyun_card';
     public $timestamps = false;
-    protected $fillable = ['class_id','course_id','uid','mobile','name','corperation', 'source','note',];
+    protected $fillable = ['uid','name','passwd','secret','mobile','email', 'role','access','note','state','authorize','head_icon','source','active_time',];
 }

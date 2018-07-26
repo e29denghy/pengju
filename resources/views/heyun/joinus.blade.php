@@ -7,8 +7,8 @@
 @extends('layouts.default_heyun_notify')
 @section('title', $title)
 @section('content')
-<div class="container marketing">
-  <div class="featurette-header text-center" id='member'>
+<div class="container marketing bg-light">
+  <div class="featurette-header text-center">
       <br>
       <br>
       <h2>{{ $title_1 }}</h2>
@@ -18,7 +18,7 @@
   <div class="pdr_0 mt-3">
     <img class="featurette-image img-fluid" src="/heyun/qipao1.jpg" alt="旗袍">
   </div>
-  <div class="row featurette bg-danger">
+  <div class="row featurette bg-danger" id='member'>
       <div class="p-3">
         <h2 class="text-center text-white mt-3 mb-3">{{ $value }}</h2>
         <p>
@@ -117,7 +117,7 @@
         <p>
           <h5 class="text-white let_2">地址：中国深圳罗湖区大望精鼎文化创意产业园B7栋3层</h5>
           <h5 class="text-white let_2">电话：0755－25607811</h5>
-          <h5 class="text-white let_2">手机：13502841101(助理小小)</h5>
+          <h5 class="text-white let_2">手机：13502841101</h5>
         </p>
       </div>
     </div>
