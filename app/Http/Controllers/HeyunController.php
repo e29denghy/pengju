@@ -29,6 +29,7 @@ class HeyunController extends Controller
         }
         else{
             $return = ["title"=>'预约报名信息','code'=>$request->code,'name'=>$request->name,'mobile'=>$request->mobile,'id_card'=>$request->id_card,'type'=>$request->type,'value'=>config('heyun.value'),'value_list'=>config('heyun.value_list'),"page_id"=>"joinok"];
+            $return['join_time'] = '';
             if('search'==$type){
               $find_card=HeyunCard::where('uid',$request->uid)->first();
               if(empty($find_card)){
@@ -36,15 +37,16 @@ class HeyunController extends Controller
               }
               else{
                 $is_pay = true;
-                $return['pay_time'] = $find_card['create_time'];
+                $return['join_time'] = $find_card['create_time'];
                 $return['card_id'] = $find_card['card_id'];
               }
               $return['title'] = '会员信息查询结果';
               $return['pay'] = $is_pay;
               $return['page_id'] = 'search';
             }
-            $return['join_time'] = $request->join_time;
+            $return['entry_time'] = $request->entry_time;
         }
+        //dump($return);
         return view($blade,$return);
     }
 
@@ -75,7 +77,7 @@ class HeyunController extends Controller
           return redirect('/heyun/joinok?type=search_undefined');
       }
       else{
-          return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$find_entry->name.'&uid='.$find_entry->uid.'&join_time='.$find_entry->create_time.'&id_card='.$find_entry->self_id.'&code='.$find_entry->entry_code.'&type=search');
+          return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$find_entry->name.'&uid='.$find_entry->uid.'&entry_time='.$find_entry->create_time.'&id_card='.$find_entry->self_id.'&code='.$find_entry->entry_code.'&type=search');
       }
     }
 
@@ -101,8 +103,9 @@ class HeyunController extends Controller
           $find_user=HeyunUser::where('mobile',$request->mobile)->first();
           //dump($find_user);
           if(empty($find_user)){
+            $str = $request->name.$request->mobile.date("Y-m-d H:i:s").rand();
             $user = HeyunUser::create([
-                  'uid'=>'denghy',
+                  'uid'=>md5($str),
                   'name'=>$request->name,
                   'passwd'=>'1001',
                   'secret'=>'1001',
@@ -136,13 +139,13 @@ class HeyunController extends Controller
                 ]);
                 //dump($entry);
                  session()->flash('success', '恭喜~您已经预约成功！');
-                 return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$request->name.'&id_card='.$request->id_card.'&code='.$entry->entry_code.'&type=entry');
+                 return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$request->name.'&uid='.$entry->uid.'&entry_time='.$entry->active_time.'&id_card='.$request->id_card.'&code='.$entry->entry_code.'&type=entry');
             }
           }
           else{
             $find_entry=HeyunEntry::where('mobile',$request->mobile)->first();
             session()->flash('success', '您已经预约过了，请不要重复预约！');
-            return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$find_entry->name.'&uid='.$find_entry->uid.'&join_time='.$find_entry->create_time.'&id_card='.$find_entry->self_id.'&code='.$find_entry->entry_code.'&type=search');
+            return redirect('/heyun/joinok?mobile='.$request->mobile.'&name='.$find_entry->name.'&uid='.$find_entry->uid.'&entry_time='.$find_entry->create_time.'&id_card='.$find_entry->self_id.'&code='.$find_entry->entry_code.'&type=search');
           }
         }
         else{
