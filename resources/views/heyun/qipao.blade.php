@@ -28,7 +28,7 @@
     </div>
     <hr class="featurette-divider">
     <div class="pdr_0 mt-3">
-      <img class="featurette-image img-fluid" src="/heyun/qipao4.png" alt="旗袍">
+      <img class="featurette-image img-fluid" src="/heyun/qipao4.jpg" alt="旗袍">
     </div>
     <hr class="featurette-divider">
     <div class="pdr_0 mt-3 mb-3">
