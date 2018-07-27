@@ -77,7 +77,7 @@
   <div class="featurette-heading text-center" id="leader">
       <br>
       <br>
-      <h2>吴亚敏女士介绍</h2>
+      <h2>设计师介绍</h2>
       <br>
   </div>
   <div class="row justify-content-md-center">

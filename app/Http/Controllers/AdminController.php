@@ -22,7 +22,7 @@ class AdminController extends Controller
       if(2==$entry->state){
         $find_card=HeyunCard::where('uid',$request->uid)->first();
         $entry->card_id = $find_card->card_id;
-        $entry->join_time = $find_card->join_time;
+        $entry->join_time = $find_card->create_time;
       }
       $page_id = "edit";
       return view('admin/heyun/edit',compact('page_id','entry'));
@@ -31,9 +31,55 @@ class AdminController extends Controller
     public function editinfo(Request $request)
     {
       // code...
-      $uid = $request->uid;
-      $find_entry=HeyunEntry::where('uid',$request->uid)->first();
-      $find_card=HeyunCard::where('uid',$request->uid)->first();
+      //dump($request);
+       $uid = $request->uid;
+       $http_refer = $_SERVER["HTTP_REFERER"];
+       $redirect_url = $http_refer;
+       if("0"==$request->editstate && null == $request->operatecard){
+         return redirect($redirect_url)->withErrors(['您没有做任何修改！']);
+       }
+       else{
+         if("0"==$request->editstate){
+
+         }
+         else{
+           $update = HeyunEntry::where('uid',$request->uid)
+                    ->update(['state'=>$request->editstate]);
+         }
+         if("1"==$request->editstate){
+           $update = HeyunCard::where('uid',$request->uid)
+                    ->update(['state'=>-1]);
+         }
+         else{
+           $entry=HeyunEntry::where('uid',$request->uid)->first();
+           if(2==$entry->state){
+             $find_card=HeyunCard::where('uid',$request->uid)->first();
+             if(empty($find_card)){
+               $card_id = 'yihe'.date('Ymd').str_random(5);
+               $user = HeyunCard::create([
+                     'card_id'=>$card_id,
+                     'uid'=>$uid,
+                     'state'=>1,
+                     'authorize'=>1,
+                     'source' => 1,
+                     'active_time'=>date("Y-m-d H:i:s"),
+               ]);
+             }
+             else{
+               $update = HeyunCard::where('uid',$request->uid)
+                        ->update(['state'=>1]);
+             }
+           }
+           else{
+             return redirect($redirect_url)->withErrors(['用户尚未缴费，无法发放会员卡！']);
+           }
+
+         }
+       }
+       session()->flash('success', '您已经修改成功！');
+       return redirect('/admin/heyun/edit?uid='.$uid);
+      // $find_entry=HeyunEntry::where('uid',$request->uid)->first();
+      // $find_card=HeyunCard::where('uid',$request->uid)->first();
 
     }
 

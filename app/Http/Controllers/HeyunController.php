@@ -65,6 +65,8 @@ class HeyunController extends Controller
           'name'            => 'required|max:50',
           'mobile'          => 'required|regex:/^1[34578]\d{9}$/',
       ];
+      $http_refer = $_SERVER["HTTP_REFERER"];
+      $redirect_url = $http_refer;
       $validator = Validator::make($request->all(), $rules);
       if ($validator->fails()) {
           return redirect($redirect_url)

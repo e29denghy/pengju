@@ -13,12 +13,13 @@
 
 Route::get('/heyun/joinus', 'HeyunController@joinus')->name('joinus');
 Route::get('/heyun/joinok', 'HeyunController@joinok')->name('joinok');
+Route::get('/heyun/qipao', 'HeyunController@qipao')->name('qipao');
 Route::post('/heyun/entry', 'HeyunController@entry')->name('heyun_entry');
 Route::get('/heyun/search', 'HeyunController@search')->name('search');
 Route::post('/heyun/searchmember', 'HeyunController@searchmember')->name('heyun_member');
 Route::get('/admin/heyun/entry', 'AdminController@heyun')->name('heyun_list');
 Route::get('/admin/heyun/edit', 'AdminController@edit')->name('heyun_edit');
-Route::post('/admin/heyun/editinfo', 'AdminController@editinfo')->name('heyun_editinfo');
+Route::any('/admin/heyun/editinfo', 'AdminController@editinfo')->name('heyun_editinfo');
 
 ///////////////////////////////////////////////////////////
 
