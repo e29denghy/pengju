@@ -88,7 +88,7 @@ class HeyunController extends Controller
         $rules = [
             'name'            => 'required|max:50',
             'mobile'          => 'required|regex:/^1[34578]\d{9}$/',
-            'id_card'         => [new Idcardrule],
+            //'id_card'         => [new Idcardrule],
         ];
 
         $http_refer = $_SERVER["HTTP_REFERER"];
@@ -129,7 +129,8 @@ class HeyunController extends Controller
             else{
                 $entry = HeyunEntry::create([
                     'entry_code'=>str_random(random_int(4,6)),
-                    'self_id' => $request->id_card,
+                    //'self_id' => $request->id_card,
+                    'self_id' => '',
                     'uid' => $user->uid,
                     'mobile' => $request->mobile,
                     'name' => $request->name,

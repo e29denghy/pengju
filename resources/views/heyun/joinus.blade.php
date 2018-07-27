@@ -63,10 +63,10 @@
             <label for="mobile" class="col-form-label font_22"><span data-feather="phone"></span> 手机号码</label>
             <input type="text" name="mobile" class="form-control" value="{{ old('mobile') }}">
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="id_card" class="col-form-label font_22"><span data-feather="globe"></span> 身份证号码</label>
             <input type="text" name="id_card" class="form-control" value="{{ old('id_card') }}">
-          </div>
+          </div> -->
           <button type="submit" class="btn btn-primary font_22">提交预约</button>
         </form>
       </div>

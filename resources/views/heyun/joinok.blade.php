@@ -32,9 +32,9 @@
             <div class="form-group">
               <label for="mobile" class="col-form-label">手机号码: {{$mobile}}</label>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="id_card" class="col-form-label">身份证号码: {{$id_card}}</label>
-            </div>
+            </div> -->
             <div class="form-group">
               <label for="code" class="col-form-label">预约码: {{$code}}</label>
             </div>
@@ -94,9 +94,9 @@
             <div class="form-group">
               <label for="mobile" class="col-form-label">手机号码: {{$mobile}}</label>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="id_card" class="col-form-label">身份证号码: {{$id_card}}</label>
-            </div>
+            </div> -->
             <div class="form-group">
               <label for="code" class="col-form-label">预约码: {{$code}}</label>
             </div>
